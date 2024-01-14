@@ -1,6 +1,6 @@
-name: Electron Builder Action
+name: Electron Builder Action (node16)
 author: Samuel Meuli
-description: GitHub Action for building and releasing Electron apps
+description: Fork of GitHub Action for building and releasing Electron apps with node16
 
 inputs:
   github_token:
@@ -53,7 +53,7 @@ inputs:
     required: false
 
 runs:
-  using: node12
+  using: node16
   main: index.js
 
 branding:
